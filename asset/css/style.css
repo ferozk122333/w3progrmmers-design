@@ -151,8 +151,7 @@ iframe {
     background-color: #ffffff;
     height: auto;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: 10px 0;
 }
 .logo-right ul {
     align-items: center;
@@ -348,34 +347,52 @@ p.a-p span {
   grid-template-rows: 45px;
   padding: 0 0 10px;
 }
+textarea input::placeholder {
+    color: #b3b1b1;
+    font-size: 12px;
+}
+.select{
+  color: #b3b1b1;
+    font-size: 12px;
+    padding-left: 10px;
+}
 input.form-control{
     border-radius: 5px;
     border: 1px solid transparent;
-    padding: 20px;
+    padding-left: 5px;
     text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 600;
-    color: #4c4c4c;
 }
-textarea.form-control, select, input[type="date"] {
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 700;
+textarea.form-control, select{
     border-radius: 5px;
     border-style: none;
-    color: #4c4c4c;
     text-transform: capitalize;
+    padding-left: 5px;
 }
-.form-control input[type="submit"] {
+select:invalid {
+ color: #b3b1b1; 
+}
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #b3b1b1;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+input[type="date"] {
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 12px;
+}
+.form-group input[type="submit"]{
     text-align: center;
     padding: 0;
     background-color: #ed1f24;
     color: #ffffff;
     height: 30px;
     cursor: pointer;
-}
-.form-group input[type="submit"] {
-    padding: 0;
 }
 /*====about area end====*/
 /*====course area start====*/
@@ -917,7 +934,6 @@ p.se-s span{
     text-transform: uppercase;
     background-color: #00478e;
 }
-
 /*====search-area end====*/
 /*====footer area start====*/
 footer {

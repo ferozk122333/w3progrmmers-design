@@ -6,6 +6,8 @@
 	<title>Document</title>
 	<!-- fontawesome css link -->
 	<link rel="stylesheet" href="asset/css/all.min.css">
+	<!-- animate css link -->
+	<link rel="stylesheet" href="asset/css/animate.css">
 	<!-- carousel css link -->
 	<link rel="stylesheet" href="asset/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="asset/css/owl.theme.default.min.css">
@@ -209,7 +211,7 @@
 					</div>
 					<div class="form-group">
 						<select name="" id="" placeholder="choice sujcet" class="form-control">
-							<option value="" selected=""></option>
+							<option value="" disabled selected hidden>Please Choose...</option>
 							<option value="">web design</option>
 							<option value="">php</option>
 							<option value="">laravel</option>
@@ -663,6 +665,8 @@
 	<!-- js link fontwesome -->
 	<script src="asset/js/all.min.js"></script>
 	<!-- counter js -->
+	<script src="asset/js/wow.min.js"></script>
+	<!-- counter js -->
 	<script src="asset/js/jwaypoint.counter.main.js"></script>
 	<script src="asset/js/jquery.counterup.min.js"></script>
 	<!-- slicknav js -->
@@ -679,6 +683,7 @@
 		$(function(){
 			$('#menu').slicknav();
 		});
+		new WOW().init();
 	</script>
 </body>
 </html>
