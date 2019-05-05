@@ -1115,22 +1115,31 @@ ul.dropdown-menu {
     visibility:hidden;
     top: 46px;
     left: 0;
-    width: 259px;
+    width: 290px;
     height: 190px;
-    transition: .30s;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     background-color: #023263;
 }
 ul.dropdown-menu{
     display: block;
 }
-ul.dropdown-menu a{
+ul.dropdown-menu a {
     padding: 5px 5px;
     display: flex;
     line-height: 28px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
+    align-items: center;
+    padding-left: 10px;
+}
+ul.dropdown-menu span {
+    padding-left: 10px;
+}
+.dicon {
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
 }
 ul.dropdown-menu a:hover{
   background-color: #00478e;
@@ -1142,6 +1151,6 @@ ul.dropdown-menu.contact {
     height: 76px;
 }
 ul.dropdown-menu.apply {
-    width: 205px;
-    height: 142px;
+    height: 114px;
+    margin-left: -176px;
 }
